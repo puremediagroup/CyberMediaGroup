@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Cyber Media Group",
-    "currentPage": "index.html",
+    "currentPage": "page1.html",
     "theme": {
       "name": "gamingamp",
       "title": "GamingAMP",
@@ -45,7 +45,7 @@
         "url": "https://fonts.googleapis.com/css?family=Fjalla+One:400"
       }
     ],
-    "uniqCompNum": 18,
+    "uniqCompNum": 20,
     "versionPublish": "4.11.3",
     "screenshot": "screenshot.png",
     "favicon": "",
@@ -179,7 +179,7 @@
             }
           },
           "_name": "menu1",
-          "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top global once=\"menu\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<!--  -->\n\t<header>Size</header>\n\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked>\n\t<!--  -->\n\t<header>Show/Hide</header>\t\n\t<input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n\t<input type=\"range\" title=\"Logo Height\" inline name=\"logoHeight\" min=\"30\" max=\"80\" value=\"70\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"range\" title=\"Logo Width\" inline name=\"logoWidth\" min=\"30\" max=\"80\" value=\"70\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n\t<input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n\t<input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n\t<input type=\"checkbox\" title=\"Show Social\" name=\"showSocial\">\n\t<input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"3\" step=\"1\" condition=\"showSocial\">\n\t<header>Sidebar</header>\n\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t<option value=\"left\">Left</option>\n\t\t<option value=\"right\" selected>Right</option>\n\t</select>\n\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n\t<header>Background</header>\n\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#141229\" required>\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo && !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/logo2.png\" layout=\"responsive\" height=\"50\" width=\"50\" alt=\"image\" class=\"mobirise-loader\">\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/logo2.png\" alt>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap mbr-white\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-bold mbr-white\" data-app-selector=\".navbar-caption\" href=\"https://8b.com\" mbr-link-type=\"name\" data-app-placeholder=\"Type Text\">Gamesite</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-bold link mbr-white\" href=\"index.html#header1-0\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Preorder</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-bold link mbr-white\" href=\"https://8b.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Upcoming</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-bold link mbr-white\" href=\"index.html#features3-t\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">News</a>\n\t\t\t\t\t</li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SOCIAL ICON -->\n\t\t\t\t<div class=\"menu-social-list\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t<a href=\"https://twitter.com/8bSiteBuilder\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-twitter fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/8bcom/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.linkedin.com/in/8b-com/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-linkedin fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\t<!-- SOCIAL ICON END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md mbr-bold btn-primary-outline\" href=\"https://8b.com\" data-app-placeholder=\"Type Text\">Join To Comunity</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t<div class=\"hamburger\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
+          "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top global once=\"menu\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<!--  -->\n\t<header>Size</header>\n\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked>\n\t<!--  -->\n\t<header>Show/Hide</header>\t\n\t<input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n\t<input type=\"range\" title=\"Logo Height\" inline name=\"logoHeight\" min=\"30\" max=\"80\" value=\"70\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"range\" title=\"Logo Width\" inline name=\"logoWidth\" min=\"30\" max=\"80\" value=\"70\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n\t<input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n\t<input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n\t<input type=\"checkbox\" title=\"Show Social\" name=\"showSocial\">\n\t<input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"3\" step=\"1\" condition=\"showSocial\">\n\t<header>Sidebar</header>\n\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t<option value=\"left\">Left</option>\n\t\t<option value=\"right\" selected>Right</option>\n\t</select>\n\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n\t<header>Background</header>\n\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#141229\" required>\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo && !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/logo2.png\" layout=\"responsive\" height=\"50\" width=\"50\" alt=\"image\" class=\"mobirise-loader\">\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/logo2.png\" alt>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap mbr-white\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-bold mbr-white\" data-app-selector=\".navbar-caption\" href=\"https://8b.com\" mbr-link-type=\"name\" data-app-placeholder=\"Type Text\">Gamesite</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-bold link mbr-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Home</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-bold link mbr-white\" href=\"page1.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">About Us</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-bold link mbr-white\" href=\"index.html#features3-t\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">News</a>\n\t\t\t\t\t</li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SOCIAL ICON -->\n\t\t\t\t<div class=\"menu-social-list\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t<a href=\"https://twitter.com/8bSiteBuilder\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-twitter fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/8bcom/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.linkedin.com/in/8b-com/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-linkedin fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\t<!-- SOCIAL ICON END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md mbr-bold btn-primary-outline\" href=\"https://8b.com\" data-app-placeholder=\"Type Text\">Join To Comunity</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t<div class=\"hamburger\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
           "_cid": "rFFW2dbi4q",
           "_anchor": "menu1-0",
           "_protectedParams": [],
@@ -443,6 +443,214 @@
           "_global": true,
           "_once": "footer",
           "_params": {}
+        }
+      ]
+    },
+    "page1.html": {
+      "settings": {
+        "title": "About Us",
+        "order": 1
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@menuBgColor",
+            "overflow": "visible",
+            ".navbar": {
+              "min-height": "80px",
+              "background": "@menuBgColor",
+              "box-shadow": "3.5px 6.1px 30px rgba(0, 0, 0, 0.57)"
+            },
+            "& when not (@showBrand) and not (@showLogo)": {
+              ".navbar > .container, .navbar > .container-fluid": {
+                "justify-content": "flex-end !important"
+              }
+            },
+            "& when (@showLogo)": {
+              ".navbar-brand": {
+                ".navbar-logo": {
+                  "max-height": "80px",
+                  "min-width": "30px",
+                  "max-width": "80px",
+                  "amp-img, img": {
+                    "height": "~\"@{logoHeight}px\"",
+                    "width": "~\"@{logoWidth}px\"",
+                    "object-fit": "contain"
+                  }
+                }
+              }
+            },
+            "& when (@showBrand)": {
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              }
+            },
+            ".navbar .navbar-collapse": {
+              "@media (max-width: 991px)": {
+                "background": "@menuBgColor",
+                "& when (@sidebarSide = 'left')": {
+                  "right": "auto",
+                  "left": "0"
+                }
+              }
+            },
+            "& when (@showItems)": {
+              ".nav-link": {
+                "margin": ".667em 1em !important",
+                "padding": "0 !important",
+                "transition": "0.3s",
+                "&:hover": {
+                  "color": "@primaryColor !important"
+                }
+              },
+              ".dropdown-item.active, .dropdown-item:active": {
+                "background-color": "transparent"
+              },
+              ".dropdown-menu": {
+                "background": "@menuBgColor"
+              },
+              ".dropdown-item": {
+                "transition": "0.4s",
+                "&:hover": {
+                  "color": "@primaryColor"
+                }
+              }
+            },
+            ".hamburger span": {
+              "background-color": "@hamburgerColor"
+            },
+            ".builder-sidebar": {
+              "background-color": "@menuBgColor"
+            },
+            ".close-sidebar": {
+              "&:focus": {
+                "outline": "2px auto @primaryColor"
+              },
+              "span": {
+                "background-color": "@hamburgerColor"
+              }
+            },
+            "& when (@showSocial)": {
+              "& when (@showItems)": {
+                ".menu-social-list": {
+                  "@media (min-width: 992px)": {
+                    "padding-left": "1rem"
+                  },
+                  "@media (max-width: 991px)": {
+                    "padding-top": ".5rem"
+                  }
+                }
+              },
+              "& when (@showButtons)": {
+                ".menu-social-list": {
+                  "@media (max-width: 991px)": {
+                    "padding-bottom": ".5rem"
+                  }
+                }
+              }
+            },
+            ".iconfont-wrapper": {
+              "height": "1.3rem",
+              "width": "1.3rem",
+              "padding": "0.2rem",
+              "display": "inline-flex",
+              "justify-content": "center",
+              "align-items": "center",
+              ".amp-iconfont": {
+                "vertical-align": "middle",
+                "font-size": "1.3rem",
+                "width": "1.3rem"
+              }
+            }
+          },
+          "_name": "menu1",
+          "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top global once=\"menu\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<!--  -->\n\t<header>Size</header>\n\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked>\n\t<!--  -->\n\t<header>Show/Hide</header>\t\n\t<input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n\t<input type=\"range\" title=\"Logo Height\" inline name=\"logoHeight\" min=\"30\" max=\"80\" value=\"70\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"range\" title=\"Logo Width\" inline name=\"logoWidth\" min=\"30\" max=\"80\" value=\"70\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n\t<input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n\t<input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n\t<input type=\"checkbox\" title=\"Show Social\" name=\"showSocial\">\n\t<input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"3\" step=\"1\" condition=\"showSocial\">\n\t<header>Sidebar</header>\n\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t<option value=\"left\">Left</option>\n\t\t<option value=\"right\" selected>Right</option>\n\t</select>\n\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n\t<header>Background</header>\n\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#141229\" required>\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo && !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/logo2.png\" layout=\"responsive\" height=\"50\" width=\"50\" alt=\"image\" class=\"mobirise-loader\">\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/logo2.png\" alt>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap mbr-white\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-bold mbr-white\" data-app-selector=\".navbar-caption\" href=\"https://8b.com\" mbr-link-type=\"name\" data-app-placeholder=\"Type Text\">Gamesite</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-bold link mbr-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Home</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-bold link mbr-white\" href=\"page1.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">About Us</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-bold link mbr-white\" href=\"index.html#features3-t\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">News</a>\n\t\t\t\t\t</li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SOCIAL ICON -->\n\t\t\t\t<div class=\"menu-social-list\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t<a href=\"https://twitter.com/8bSiteBuilder\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-twitter fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/8bcom/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.linkedin.com/in/8b-com/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-linkedin fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t</div>\n\t\t\t\t<!-- SOCIAL ICON END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md mbr-bold btn-primary-outline\" href=\"https://8b.com\" data-app-placeholder=\"Type Text\">Join To Comunity</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t<div class=\"hamburger\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
+          "_cid": "rFFW2dbi4q",
+          "_anchor": "menu1-i",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".copy-box": {
+              "width": "100%",
+              "padding": "0 16px 0 16px",
+              "margin-top": "100px"
+            },
+            ".links-text": {
+              "margin-left": "20px",
+              "transition": "0.3s"
+            },
+            ".links-list": {
+              "display": "flex",
+              "flex-wrap": "wrap"
+            },
+            ".links-list > a": {
+              "display": "inline-block",
+              "&:hover": {
+                "color": "@primaryColor",
+                "text-decoration": "underline"
+              }
+            },
+            ".text-box, .social-box": {
+              "text-align": "right"
+            },
+            ".iconfont-wrapper": {
+              "display": "inline-flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "padding": "0.2rem",
+              "margin-right": "(@iconsSize * 0.4rem)"
+            },
+            ".amp-iconfont": {
+              "font-size": "(@iconsSize * 0.75rem)",
+              "width": "(@iconsSize * 0.75rem)",
+              "color": "@primaryColor"
+            },
+            ".custom-box": {
+              "position": "relative"
+            },
+            ".copy-box:before": {
+              "content": "\"\"",
+              "position": "absolute",
+              "top": "70px",
+              "left": "1%",
+              "display": "block",
+              "width": "98%",
+              "height": "1px",
+              "background-color": "#FFF",
+              "opacity": "0.5"
+            },
+            ".image-wrapper": {
+              "width": "200px",
+              "height": "200px",
+              "margin-bottom": "20px"
+            }
+          },
+          "_name": "footer2",
+          "_customHTML": "<section class=\"footer2\" group=\"Footers\" plugins=\"amp-main\" global=\"\" once=\"footer\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <header>Show/Hide</header>\n    <!--  -->\n    <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\">\n    <input type=\"checkbox\" title=\"Links\" name=\"showLinks\" checked=\"\">\n    <input type=\"range\" title=\"Links Count\" name=\"linksAmount\" min=\"1\" max=\"7\" step=\"1\" value=\"6\" condition=\"showLinks\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n    <header>Icons</header>\n    <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked=\"\">\n    <input type=\"range\" title=\"Icons Count\" name=\"iconsAmount\" min=\"1\" max=\"6\" step=\"1\" value=\"4\" condition=\"showIcons\">\n    <input type=\"range\" title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"3\" step=\"0.25\" value=\"2\" condition=\"showIcons\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#000000\" selected=\"\">\n    </fieldset>\n    <!--  -->\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type!='color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#141229\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-5 mbr-flex mbr-jc-c\" mbr-if=\"showLogo\">\n                <div class=\"image-wrapper\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/logo2.png\" layout=\"responsive\" width=\"100\" height=\"100\" alt=\"logo\" class=\"mobirise-loader\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/logo2.png\" alt=\"logo\">\n                    </amp-img>\n                </div>\n            </div>\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-7\" mbr-class=\"{'mbr-col-lg-12': !showLogo}\">\n                <div class=\"links-box mbr-pb-5\" mbr-if=\"showLinks\">\n                    <div mbr-list=\"\" mbr-list-grow=\"linksAmount\" class=\"links-list mbr-flex mbr-jc-e\">\n                        <p class=\"mbr-fonts-style custom-text mbr-white mbr-bold links-text\" mbr-theme-style=\"display-4\" data-app-selector=\".links-text\" href=\"#\">Home</p>\n                        <p class=\"mbr-fonts-style custom-text mbr-white mbr-bold links-text\" mbr-theme-style=\"display-4\" data-app-selector=\".links-text\" href=\"#\">Pages</p>\n                        <p class=\"mbr-fonts-style custom-text mbr-white mbr-bold links-text\" mbr-theme-style=\"display-4\" data-app-selector=\".links-text\" href=\"#\">Gallery</p>\n                        <p class=\"mbr-fonts-style custom-text mbr-white mbr-bold links-text\" mbr-theme-style=\"display-4\" data-app-selector=\".links-text\" href=\"#\">Games</p>\n                        <p class=\"mbr-fonts-style custom-text mbr-white mbr-bold links-text\" mbr-theme-style=\"display-4\" data-app-selector=\".links-text\" href=\"#\">Blog</p>\n                        <p class=\"mbr-fonts-style custom-text mbr-white mbr-bold links-text\" mbr-theme-style=\"display-4\" data-app-selector=\".links-text\" href=\"#\">Contacts</p>\n                        \n                    </div>\n                </div>\n                <div class=\"text-box\" mbr-if=\"showText\">\n                    <p class=\"mbr-fonts-style mbr-white footer-text\" mbr-theme-style=\"display-4\" data-app-selector=\".footer-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laudantium repellendus fuga nulla natus facilis magni. Quo delectus asperiores omnis.</p>\n                </div>\n                <div class=\"social-box mbr-pt-5\" mbr-if=\"showIcons\">\n                    <div mbr-list=\"\" mbr-list-grow=\"iconsAmount\">\n                        <a href=\"#\" class=\"iconfont-wrapper\">\n                            <span mbr-icon=\"\" class=\"amp-iconfont animation-normal fa fa-twitter\"></span>\n                        </a>\n                        <a href=\"#\" class=\"iconfont-wrapper\">\n                            <span mbr-icon=\"\" class=\"amp-iconfont animation-normal fa fa-vk\"></span>\n                        </a>\n                        <a href=\"#\" class=\"iconfont-wrapper\">\n                            <span mbr-icon=\"\" class=\"amp-iconfont animation-normal fa fa-telegram\"></span>\n                        </a>\n                        <a href=\"#\" class=\"iconfont-wrapper\">\n                            <span mbr-icon=\"\" class=\"amp-iconfont animation-normal fa fa-youtube\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"mbr-row custom-box\">\n            <div class=\"copy-box mbr-flex mbr-jc-b mbr-pt-5\">\n                <p class=\"mbr-fonts-style mbr-white copy-text\" mbr-theme-style=\"display-4\" data-app-selector=\".copy-text\">&nbsp;© Copyright 2019 cybermediagroup.net</p>\n                <p class=\"mbr-fonts-style mbr-white copy-text\" mbr-theme-style=\"display-4\" data-app-selector=\".copy-text\">All Rights Reserved</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rFFWB7ZVWC",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footer",
+          "_params": {},
+          "_anchor": "footer2-j"
         }
       ]
     }
